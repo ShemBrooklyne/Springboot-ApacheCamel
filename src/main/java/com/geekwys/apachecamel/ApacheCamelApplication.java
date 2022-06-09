@@ -1,13 +1,14 @@
 package com.geekwys.apachecamel;
 
+import org.apache.camel.builder.RouteBuilder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApachecamelApplication {
+public class ApacheCamelApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApachecamelApplication.class, args);
+		SpringApplication.run(ApacheCamelApplication.class, args);
 	}
 
 }
