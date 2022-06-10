@@ -5,11 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class WeatherDto {
+public class WeatherDto implements Serializable {
     static Integer counter = 1;
     private String city;
     private String temp;
