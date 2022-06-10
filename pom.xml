@@ -34,9 +34,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-servlet</artifactId>
-			<version>3.17.0</version>
+			<groupId>org.apache.camel.springboot</groupId>
+			<artifactId>camel-servlet-starter</artifactId>
+			<version>3.16.0</version>
 		</dependency>
 
 		<dependency>
@@ -45,6 +45,11 @@
 			<version>3.17.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.camel.springboot</groupId>
+			<artifactId>camel-rest-starter</artifactId>
+			<version>3.16.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>

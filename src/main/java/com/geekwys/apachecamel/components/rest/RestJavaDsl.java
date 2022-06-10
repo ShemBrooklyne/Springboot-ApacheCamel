@@ -15,7 +15,8 @@ public class RestJavaDsl extends RouteBuilder {
     private WeatherDataProvider weatherDataProvider;
     @Override
     public void configure() throws Exception {
-        from("javadsl/weather/{city}?produces=application/json")
+        from("rest:get:javadsl/weather/{city}?produces=application/json")
+                .outputType(WeatherDto.class)
                 .process(this::getWeatherData);
     }
 
