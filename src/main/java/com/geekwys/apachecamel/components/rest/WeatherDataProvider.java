@@ -10,16 +10,16 @@ import java.util.Map;
 @Component
 public class WeatherDataProvider {
 
-    private static final Map<String, WeatherDto> weatherData = new HashMap<>();
+    private static Map<String, WeatherDto> weatherData = new HashMap<>();
 
     public WeatherDataProvider() {
         WeatherDto dto = WeatherDto.builder()
-                .city("Nairobi")
+                .city("london")
                 .temp("10")
                 .unit("C")
                 .receivedTime(new Date().toString())
                 .id(1).build();
-        weatherData.put("NAIROBI", dto);
+        weatherData.put("LONDON", dto);
     }
 
     public WeatherDto getCurrentWeather(String city) {
