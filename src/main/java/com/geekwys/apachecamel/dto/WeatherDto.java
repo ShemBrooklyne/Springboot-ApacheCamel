@@ -10,9 +10,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class WeatherDto {
+    static Integer counter = 1;
     private String city;
     private String temp;
     private String unit;
     private String receivedTime;
-    private Integer id;
+    private Integer id = counter++;
 }
